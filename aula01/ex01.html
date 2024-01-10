@@ -1,0 +1,99 @@
+<!-- ex01.html -->
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Hugo Hendrix" />
+    <meta
+      name="description"
+      content="Exercícios da aula 01 do Módulo Front Dinâmico JS Vanilla - Exercício 01"
+    />
+    <title>Exercício 01 - Validação de Formulário</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome CSS CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+
+    <!-- Estilo CSS específico para o Exercício 01 -->
+    <link rel="stylesheet" href="ex01.css" />
+
+    <!-- FAVICON -->
+    <link
+      rel="shortcut icon"
+      href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f34f.svg"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <h1 class="display-6">Exercício 01 - Validação de formulário</h1>
+        <p class="lead">
+          Este é um conjunto de exercícios desenvolvidos como parte do Programa
+          Vem Ser Tech, uma parceria entre a Ada Tech e o iFood.
+        </p>
+      </header>
+
+      <main class="row">
+        <div class="col-md-6">
+          <!-- Div para o SVG animado -->
+          <div id="animated-svg">
+            <img src="./assests/programming-animate.svg" alt="desenhio de um programador inciando as atividades" />
+            <a href="index.html">Voltar para página principal</a>
+
+          </div>
+        </div>
+        <div class="col-md-6 glass-container">
+          <!-- Div para o formulário -->
+          <form id="validation-form">
+            <div class="mb-3">
+              <label for="nome" class="form-label">Nome:</label>
+              <input type="text" class="form-control" id="nome" required />
+              <div class="invalid-feedback">Por favor, insira seu nome.</div>
+            </div>
+
+            <div class="mb-3">
+              <label for="email" class="form-label">E-mail:</label>
+              <input type="email" class="form-control" id="email" required />
+              <div class="invalid-feedback">
+                Por favor, insira um e-mail válido.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="mensagem" class="form-label">Mensagem:</label>
+              <textarea
+                class="form-control"
+                id="mensagem"
+                rows="3"
+                required
+              ></textarea>
+              <div class="invalid-feedback">
+                Por favor, insira uma mensagem.
+              </div>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            
+
+          </form>
+
+        </div>
+      </main>
+
+      
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="ex01.js"></script>
+</body>
+</html>

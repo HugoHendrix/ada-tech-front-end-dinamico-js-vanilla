@@ -1,0 +1,60 @@
+body {
+  background: linear-gradient(
+      93.08deg,
+      rgba(166, 247, 80, 0.14) 19.31%,
+      rgba(61, 44, 255, 0) 75.52%
+    ),
+    rgb(24, 28, 35); /* Degrade como cor de fundo */
+  color: #f2f2f2; /* Cinza Claro para texto */
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+header {
+  text-align: center;
+}
+
+h1.display-6 {
+  color: #a6f750;
+}
+
+p.lead {
+  color: #f2f2f2;
+}
+
+h6.display-7 {
+  color: #a6f750;
+  
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 2rem;
+  font-size: 1.6rem;
+}
+
+ul li {
+  margin-bottom: 1rem;
+}
+
+ul li a {
+  color: #f2f2f2; /* Verde Escuro para links */
+  text-decoration: none;
+}
+
+ul li a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse sobre o link */
+}
+
+i.fas {
+  margin-right: 0.5rem;
+  font-size: 1.6rem;
+}
