@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Exercício 02 - Formulário</title>
+</head>
+<body>
+    
+    <div class="container mt-5">
+        <form id="meuFormulario" onsubmit="testaform()" class="needs-validation" novalidate>
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="sobrenome">Sobrenome:</label>
+              <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="dataNascimento">Data de Nascimento:</label>
+              <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="profissao">Profissão:</label>
+              <input type="text" class="form-control" id="profissao" name="profissao" required>
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="cpf">CPF:</label>
+              <input type="text" class="form-control" id="cpf" name="cpf" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="email">E-mail:</label>
+              <input type="email" class="form-control" id="email" name="email" required>
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="senha">Senha:</label>
+              <input type="password" class="form-control" id="senha" name="senha" required>
+            </div>
+            <div class="col-md-6 mb-3">
+              <label for="telefone">Telefone:</label>
+              <input type="tel" class="form-control" id="telefone" name="telefone" required>
+            </div>
+          </div>
+    
+          <div class="form-row">
+            <div class="col-md-6 mb-3">
+              <label for="endereco">Endereço:</label>
+              <textarea class="form-control" id="endereco" name="endereco" rows="4" required></textarea>
+            </div>
+          </div>
+    
+          <button type="submit" class="btn btn-primary">Salvar</button>
+        </form>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
