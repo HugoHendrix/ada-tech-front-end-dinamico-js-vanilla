@@ -1,0 +1,108 @@
+/* ex07.css */
+
+body {
+  background: linear-gradient(
+      93.08deg,
+      rgba(166, 247, 80, 0.14) 19.31%,
+      rgba(61, 44, 255, 0) 75.52%
+    ),
+    rgb(24, 28, 35);
+  color: #f2f2f2;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+h1.display-6 {
+  color: #a6f750;
+}
+
+p.lead {
+  color: #f2f2f2;
+}
+
+a {
+  color: #68b517;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.glass-container {
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(2.5px);
+  -webkit-backdrop-filter: blur(2.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  margin-bottom: 1rem;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+#registrationForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#registrationForm .row {
+  margin-bottom: 15px;
+}
+
+label.form-label {
+  color: #a6f750;
+  font-size: 1rem;
+}
+
+.form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
+  border: 1px solid #68b517;
+}
+
+.btn-primary {
+  background-color: #a6f750;
+  border-color: #68b517;
+  color: #000;
+  font-size: 1.3rem;
+  border: #68b517;
+}
+
+.btn-primary:hover {
+  background-color: #68b517;
+}
+
+button.btn-primary:not(:disabled):not(.disabled):active {
+  background-color: #68b517;
+  color: #000;
+}
+
+#userData {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #a6f750;
+  margin-top: 1rem;
+}
+
+#registrationForm {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+#registrationForm .row {
+  margin-bottom: 15px;
+}
+
+img {
+  width: 100%;
+}

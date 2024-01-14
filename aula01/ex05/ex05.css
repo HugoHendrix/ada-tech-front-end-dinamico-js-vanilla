@@ -1,72 +1,77 @@
 /* ex05.css */
 
 body {
-    background: linear-gradient(93.08deg, rgba(166, 247, 80, 0.14) 19.31%, rgba(61, 44, 255, 0) 75.52%), rgb(24, 28, 35);
-    color: #f2f2f2;
-  }
-  
-  .container {
-    margin-top: 2rem;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  h1.display-6 {
-    color: #a6f750;
-  }
-  
-  p.lead {
-    color: #f2f2f2;
-  }
-  
-  a {
-    color: #68b517;
-    font-size: 1.3rem;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  main.row {
-    margin-top: 2rem;
-  }
-  
-  .click-container {
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-  }
-  
-  .click-container:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-  }
-  
+  background: linear-gradient(
+      93.08deg,
+      rgba(166, 247, 80, 0.14) 19.31%,
+      rgba(61, 44, 255, 0) 75.52%
+    ),
+    rgb(24, 28, 35);
+  color: #f2f2f2;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+h1.display-6 {
+  color: #a6f750;
+}
+
+p.lead {
+  color: #f2f2f2;
+}
+
+a {
+  color: #68b517;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main.row {
+  margin-top: 2rem;
+}
+
+.click-container {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+}
+
+.click-container:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.click-image {
+  max-width: 50%;
+  margin-right: 1rem;
+}
+
+#clickCounter {
+  font-size: 8rem;
+  font-weight: bold;
+  padding: 3rem;
+  margin: 3rem;
+}
+
+@media screen and (max-width: 826px) {
   .click-image {
-    max-width: 50%;
-    margin-right: 1rem;
+    display: none; /* Oculta a imagem em telas menores que 826px */
   }
-  
+
   #clickCounter {
-    font-size: 8rem;
-    font-weight: bold;
-    padding: 3rem;
-    margin: 3rem;
+    margin-right: 1rem; /* Ajuste de margem para o contador em telas menores */
   }
-  
-  @media screen and (max-width: 826px) {
-    .click-image {
-      display: none; /* Oculta a imagem em telas menores que 826px */
-    }
-  
-    #clickCounter {
-      margin-right: 1rem; /* Ajuste de margem para o contador em telas menores */
-    }
-  }
+}

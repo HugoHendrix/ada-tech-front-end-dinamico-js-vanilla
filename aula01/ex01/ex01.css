@@ -1,76 +1,80 @@
 /* ex01.css */
 
 body {
-    background: linear-gradient(93.08deg, rgba(166, 247, 80, 0.14) 19.31%, rgba(61, 44, 255, 0) 75.52%), rgb(24, 28, 35);
-    color: #f2f2f2;
-  }
-  
-  .container {
-    margin-top: 2rem;
-  }
-  
-  header {
-    text-align: center;
-  }
-  
-  h1.display-6 {
-    color: #a6f750;
-  }
-  
-  p.lead {
-    color: #f2f2f2;
-  }
-  
-  a {
-    color: #68b517;
-    font-size: 1.3rem;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
-  main.row {
-    margin-top: 2rem;
-  }
-  
-  .col-md-6 {
-    padding: 1rem;
-  }
-  
-  #animated-svg {
-    max-width: 100%;
-  }
-  
-  .glass-container {
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    backdrop-filter: blur(10px);
-    padding: 20px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-  
-  form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  
-  form label {
-    color: #a6f750;
-  }
-  
-  form .form-control {
-    background-color: rgba(255, 255, 255, 0.1);
-    color: #f2f2f2;
-  }
-  
-  form .btn-primary {
-    background-color: #68b517;
-    border-color: #68b517;
-  }
-  
-  form .btn-primary:hover {
-    background-color: #4d9811;
-    border-color: #4d9811;
-  }
-  
+  background: linear-gradient(
+      93.08deg,
+      rgba(166, 247, 80, 0.14) 19.31%,
+      rgba(61, 44, 255, 0) 75.52%
+    ),
+    rgb(24, 28, 35);
+  color: #f2f2f2;
+}
+
+.container {
+  margin-top: 2rem;
+}
+
+header {
+  text-align: center;
+}
+
+h1.display-6 {
+  color: #a6f750;
+}
+
+p.lead {
+  color: #f2f2f2;
+}
+
+a {
+  color: #68b517;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+main.row {
+  margin-top: 2rem;
+}
+
+.col-md-6 {
+  padding: 1rem;
+}
+
+#animated-svg {
+  max-width: 100%;
+}
+
+.glass-container {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+form label {
+  color: #a6f750;
+}
+
+form .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f2f2f2;
+}
+
+form .btn-primary {
+  background-color: #68b517;
+  border-color: #68b517;
+}
+
+form .btn-primary:hover {
+  background-color: #4d9811;
+  border-color: #4d9811;
+}

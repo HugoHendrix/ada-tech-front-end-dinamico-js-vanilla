@@ -1,58 +1,53 @@
 /* ex03.css */
 body {
-    transition: background-color 0.5s, color 0.5s;
-  }
+  transition: background-color 0.5s, color 0.5s;
+}
 
-  
-  
-  .dark-theme {
-    background-color: #151822; /* Azul Escuro */
-    color: #f2f2f2; /* Cinza Claro */
-  }
-  
-  .light-theme {
-    background-color: #f2f2f2; /* Cinza Claro */
-    color: #151822; /* Azul Escuro */
-  }
-  
-  .themed-elements {
-    border: 2px solid #36491f; /* Verde Escuro */
-    padding: 10px;
-    margin-top: 20px;
-  }
-  
-  a {
-    color: #68b517;
-    font-size: 1.3rem;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+.dark-theme {
+  background-color: #151822; /* Azul Escuro */
+  color: #f2f2f2; /* Cinza Claro */
+}
 
+.light-theme {
+  background-color: #f2f2f2; /* Cinza Claro */
+  color: #151822; /* Azul Escuro */
+}
 
-  /* ex03.css */
+.themed-elements {
+  border: 2px solid #36491f; /* Verde Escuro */
+  padding: 10px;
+  margin-top: 20px;
+}
+
+a {
+  color: #68b517;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ex03.css */
 
 /* Estilos padrão para o botão */
 #themeButton {
-    padding: 10px 20px;
-    margin-top: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #68b517;
-    color: #fff;
-    font-size: 1.3rem;
-  }
-  
+  padding: 10px 20px;
+  margin-top: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #68b517;
+  color: #fff;
+  font-size: 1.3rem;
+}
 
-  /* Estilos para o tema escuro */
-  .dark-theme #themeButton {
-    background-color: #36491f;
-    color: #fff;
-  }
-  
+/* Estilos para o tema escuro */
+.dark-theme #themeButton {
+  background-color: #36491f;
+  color: #fff;
+}
 
-  p.lead {
-    font-size: 1.4rem;
-  }
+p.lead {
+  font-size: 1.4rem;
+}

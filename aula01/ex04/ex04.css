@@ -1,42 +1,45 @@
 /* ex04.css */
 
 body {
-    background: linear-gradient(93.08deg, rgba(166, 247, 80, 0.14) 19.31%, rgba(61, 44, 255, 0) 75.52%), rgb(24, 28, 35);
-    color: #f2f2f2;
-    font-family: 'Arial', sans-serif; /* Adicionando uma fonte genérica */
-  }
-  
-  .container {
-    margin-top: 2rem;
-  }
-  
-  a {
-    color: #68b517;
-    font-size: 1.3rem;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
+  background: linear-gradient(
+      93.08deg,
+      rgba(166, 247, 80, 0.14) 19.31%,
+      rgba(61, 44, 255, 0) 75.52%
+    ),
+    rgb(24, 28, 35);
+  color: #f2f2f2;
+  font-family: "Arial", sans-serif; /* Adicionando uma fonte genérica */
+}
 
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  li {
-    padding: 10px;
-    margin: 10px;
-    border: 1px solid #9ac5e2; /* Azul do Exercício 01 */
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    background-color: #a6f750; /* Verde do Exercício 01 */
-    color: #1a1b1b; /* Branco do Exercício 01 */
-    font-family: 'Arial', sans-serif;
-  }
-  
-  .highlight {
-    background-color: #e74c3c; /* Vermelho do Exercício 01 */
-  }
-  
-  
+.container {
+  margin-top: 2rem;
+}
+
+a {
+  color: #68b517;
+  font-size: 1.3rem;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid #9ac5e2; /* Azul do Exercício 01 */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  background-color: #a6f750; /* Verde do Exercício 01 */
+  color: #1a1b1b; /* Branco do Exercício 01 */
+  font-family: "Arial", sans-serif;
+}
+
+.highlight {
+  background-color: #e74c3c; /* Vermelho do Exercício 01 */
+}
