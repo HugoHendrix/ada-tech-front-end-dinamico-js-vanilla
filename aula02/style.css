@@ -1,0 +1,68 @@
+body {
+    background: linear-gradient(
+      93.08deg,
+      rgba(166, 247, 80, 0.14) 19.31%,
+      rgba(61, 44, 255, 0) 75.52%
+    ),
+    rgb(24, 28, 35); /* Degrade como cor de fundo */
+    color: #f2f2f2; /* Cinza Claro para texto */
+  }
+
+  .glass-container {
+    background: rgba(102, 87, 87, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 1rem;
+    margin-bottom: 2.5rem;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+  
+  .form-container {
+    background: rgba(102, 87, 87, 0.2);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    width: 50%;
+  }
+  
+  .form-label {
+    color: #a6f750;
+  }
+  
+  .form-control {
+    background-color: transparent;
+    border: 1px solid #a6f750;
+    color: #f2f2f2;
+  }
+  
+  .error {
+    color: #ff6347;
+    margin-top: 0.5rem;
+  }
+  
+  .btn-primary {
+    background-color: #687e50;
+    border: 1px solid #a6f750;
+  }
+  
+  .btn-primary:hover {
+    background-color: #8bb42d;
+    border: 1px solid #8bb42d;
+  }
+  
+  button.btn-primary:not(:disabled):not(.disabled):active {
+    background-color: #5c8332;
+    color: #000;
+    border: 1px solid #8bb42d;
+
+  }

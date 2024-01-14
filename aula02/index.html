@@ -9,66 +9,141 @@
 
     <!-- Font Awesome CSS CDN -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <title>Exercício 02 - Formulário</title>
+
+        <!-- Estilo CSS -->
+        <link rel="stylesheet" href="style.css" />
+    <title>Aula 02 - Formulário</title>
 </head>
 <body>
     
-    <div class="container mt-5">
-        <form id="meuFormulario" onsubmit="testaform()" class="needs-validation" novalidate>
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="nome">Nome:</label>
-              <input type="text" class="form-control" id="nome" name="nome" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="sobrenome">Sobrenome:</label>
-              <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
-            </div>
-          </div>
-    
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="dataNascimento">Data de Nascimento:</label>
-              <input type="date" class="form-control" id="dataNascimento" name="dataNascimento" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="profissao">Profissão:</label>
-              <input type="text" class="form-control" id="profissao" name="profissao" required>
-            </div>
-          </div>
-    
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="cpf">CPF:</label>
-              <input type="text" class="form-control" id="cpf" name="cpf" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="email">E-mail:</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-          </div>
-    
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="senha">Senha:</label>
-              <input type="password" class="form-control" id="senha" name="senha" required>
-            </div>
-            <div class="col-md-6 mb-3">
-              <label for="telefone">Telefone:</label>
-              <input type="tel" class="form-control" id="telefone" name="telefone" required>
-            </div>
-          </div>
-    
-          <div class="form-row">
-            <div class="col-md-6 mb-3">
-              <label for="endereco">Endereço:</label>
-              <textarea class="form-control" id="endereco" name="endereco" rows="4" required></textarea>
-            </div>
-          </div>
-    
-          <button type="submit" class="btn btn-primary">Salvar</button>
-        </form>
+  <body>
+    <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
+      <div class="container-fluid">
+        <span class="navbar-brand mb-0 h1">Cadastro de usuários</span>
+        <a href="./usuarios.html">Usuários</a>
       </div>
+    </nav>
+
+    <div class="container glass-container">
+      <div class="container d-flex justify-content-center">
+        <div class="w-50 my-5 ">
+          <h3 class="mb-3">Usuário</h3>
+          <form class="container-fluid">
+            <div class="row">
+              <div class="col-5 mb-3">
+                <label for="name" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="name" name="name" />
+                <div class="error d-none" id="error-name">
+                  O campo nome é obrigatório.
+                </div>
+              </div>
+              <div class="col-7 mb-3">
+                <label for="surname" class="form-label">Sobrenome</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="surname"
+                  name="surname"
+                />
+                <div class="error d-none" id="error-surname">
+                  O campo sobrenome é obrigatório.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mb-3">
+                <label for="birthDate" class="form-label"
+                  >Data de Nascimento</label
+                >
+                <input
+                  type="date"
+                  class="form-control"
+                  id="birthDate"
+                  name="birthDate"
+                />
+                <div class="error d-none" id="error-birthdate">
+                  O campo data de nascimento é obrigatório.
+                </div>
+              </div>
+              <div class="col-4 mb-3">
+                <label for="profession" class="form-label">Profissão</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="profession"
+                  name="profession"
+                />
+                <div class="error d-none" id="error-profession">
+                  O campo profissão é obrigatório.
+                </div>
+              </div>
+              <div class="col-4 mb-3">
+                <label for="documentNumber" class="form-label">CPF</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="documentNumber"
+                  name="documentNumber"
+                />
+                <div class="error d-none" id="error-document">
+                  O campo CPF é obrigatório.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-7 mb-3">
+                <label for="name" class="form-label">E-mail</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                />
+                <div class="error d-none" id="error-email">
+                  O campo e-mail é obrigatório.
+                </div>
+              </div>
+              <div class="col-5 mb-3">
+                <label for="password" class="form-label">Senha</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="password"
+                  name="password"
+                />
+                <div class="error d-none" id="error-password">
+                  O campo senha é obrigatório.
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-4 mb-3">
+                <label for="phone" class="form-label">Telefone</label>
+                <input type="text" class="form-control" id="phone" name="phone" />
+                <div class="error d-none">O campo telefone é obrigatório.</div>
+              </div>
+              <div class="col-8 mb-3">
+                <label for="address" class="form-label">Endereço</label>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="address"
+                  name="address"
+                />
+                <div class="error d-none" id="error-address">
+                  O campo endereço é obrigatório.
+                </div>
+              </div>
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-primary" type="submit">Salvar</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+ 
+
       <script src="script.js"></script>
 </body>
 </html>
