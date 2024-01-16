@@ -1,16 +1,27 @@
-
 # Módulo Front-End Dinâmico (JS Vanilla)
 
-Este é um conjunto de exercícios desenvolvidos como parte do Programa Vem Ser Tech, uma parceria entre a Ada Tech e o iFood.
+Este repositório contém uma série de exercícios desenvolvidos como parte do Programa Vem Ser Tech, uma colaboração entre a Ada Tech e o iFood, focados no módulo Front-End Dinâmico usando JavaScript Vanilla.
 
+## Exercícios
 
-![App Screenshot](https://github.com/HugoHendrix/ada-tech-aula01/blob/master/assets/Thumb-2-Ada.png?raw=true)
+### [Exercício 01 - Validação de Formulário](#exercicio-01)
+Criamos um formulário simples que realiza validações com JavaScript antes do envio, proporcionando uma experiência amigável ao usuário.
 
-### Exercício 01 - Validação de Formulário
-Neste exercício, criamos um formulário simples com JavaScript para realizar validações antes do envio. O objetivo foi proporcionar uma experiência amigável ao usuário, destacando campos válidos e fornecendo mensagens claras em caso de erros. Esta atividade serve como uma introdução empolgante à manipulação de formulários no frontend.
+### [Exercício 02 - Relógio Digital](#exercicio-02)
+Desenvolvemos uma página com um relógio digital dinâmico que exibe a hora, minutos, segundos e a data completa, proporcionando uma experiência interativa.
 
-### Exercício 02 - Relógio Digital
-Neste exercício, desenvolvemos uma página que exibe um relógio digital dinâmico. Além de mostrar horas, minutos e segundos, o relógio exibe a data completa. A apresentação é formatada de maneira amigável, incluindo uma saudação que varia dependendo da hora do dia (bom dia, boa tarde ou boa noite). O relógio é atualizado a cada segundo, proporcionando uma experiência dinâmica e interativa para o usuário.
+### [Exercício 03 - Trocando Tema Light/Dark](#exercicio-03)
+Exploramos a dinâmica de alteração de temas em uma página da web usando JavaScript, alternando entre temas claro e escuro.
 
-### Exercício 03 - Trocando Tema Light/Dark
-Neste exercício, exploramos a dinâmica de alteração de temas em uma página da web usando JavaScript Vanilla. Um botão permite alternar entre temas claro e escuro, personalizando a aparência de elementos como parágrafos e botões. Esta atividade destaca a capacidade de modificar dinamicamente o estilo de uma página com base nas preferências do usuário, proporcionando uma experiência de usuário mais envolvente e adaptável.
+### [Exercício 04 - Destaque de Elementos em Lista](#exercicio-04)
+Criamos uma lista com elementos destacáveis ao serem clicados, proporcionando uma experiência interativa e visualmente agradável.
+
+### [Exercício 05 - Contador de Cliques](#exercicio-05)
+Desenvolvemos um contador de cliques interativo com uma imagem dinâmica ao lado do contador.
+
+### [Exercício 06 - Contador Incremental](#exercicio-06)
+Implementamos um botão que incrementa um contador exibido na página ao ser clicado.
+
+### [Exercício 07 - Formulário de Cadastro com Validações](#exercicio-07)
+Apresentamos um formulário de cadastro com campos validados em JavaScript, proporcionando uma experiência aprimorada.
+
