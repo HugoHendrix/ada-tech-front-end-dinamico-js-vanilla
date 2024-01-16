@@ -12,6 +12,8 @@
 
         <!-- Estilo CSS -->
         <link rel="stylesheet" href="style.css" />
+
+        <link rel="shortcut icon" href="https://notion-emojis.s3-us-west-2.amazonaws.com/prod/svg-twitter/1f34f.svg" type="image/x-icon">
     <title>Aula 02 - Formulário</title>
 </head>
 <body>
@@ -19,8 +21,9 @@
   <body>
     <nav class="navbar bg-dark border-bottom border-body" data-bs-theme="dark">
       <div class="container-fluid">
-        <span class="navbar-brand mb-0 h1">Cadastro de usuários</span>
+        <span class="navbar-brand mb-0 h2 p-4">Cadastro de usuários</span>
         <a href="./usuarios.html">Usuários</a>
+        <a href="../../index.html">Voltar para página principal</a>
       </div>
     </nav>
 
@@ -28,7 +31,7 @@
       <div class="container d-flex justify-content-center">
         <div class="w-50 my-5 ">
           <h3 class="mb-3">Usuário</h3>
-          <form class="container-fluid">
+          <form>
             <div class="row">
               <div class="col-5 mb-3">
                 <label for="name" class="form-label">Nome</label>
@@ -50,6 +53,7 @@
                 </div>
               </div>
             </div>
+  
             <div class="row">
               <div class="col-4 mb-3">
                 <label for="birthDate" class="form-label"
@@ -135,6 +139,7 @@
                 </div>
               </div>
             </div>
+  
             <div class="d-grid gap-2">
               <button class="btn btn-primary" type="submit">Salvar</button>
             </div>
@@ -143,7 +148,7 @@
       </div>
     </div>
  
-
-      <script src="script.js"></script>
+      <script src="./repository.js"></script>
+      <script src="cadastro.js"></script>
 </body>
 </html>

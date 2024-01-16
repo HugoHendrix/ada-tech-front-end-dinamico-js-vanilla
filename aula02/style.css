@@ -8,6 +8,15 @@ body {
     color: #f2f2f2; /* Cinza Claro para texto */
   }
 
+  a {
+    color: #68b517;
+    font-size: 1.3rem;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+
   .glass-container {
     background: rgba(102, 87, 87, 0.2);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
