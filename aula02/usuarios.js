@@ -33,8 +33,8 @@ function refreshUsersGrid() {
                 </p>
             </div>
             <div class="card-footer d-flex justify-content-end">
-                <a href="#" class="btn btn-primary" onclick="editUser(${user.id})">Editar</a>
-                <a class="btn btn-danger" onclick="removeUser(${user.id})">Excluir</a>
+                <a href="#" class="btn btn-primary" onclick="editUser('${user._id}')">Editar</a>
+                <a class="btn btn-danger" onclick="removeUser('${user._id}')">Excluir</a>
             </div>
             </div>
         </div>
@@ -43,14 +43,13 @@ function refreshUsersGrid() {
 }
 
 function getUsers() {
-  findAll("database", "users")
+  findAll()
     .then((records) => {
       users = records;
       refreshUsersGrid();
-      console.log("Registros encontrados:", records);
     })
     .catch((error) => {
-      console.error("Erro:", error);
+      console.error("Erro ao buscar usuários:", error);
     });
 }
 

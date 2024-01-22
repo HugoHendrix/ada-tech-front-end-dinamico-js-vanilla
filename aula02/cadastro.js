@@ -6,7 +6,6 @@ let userId;
 let users = [];
 
 getUserIdFromUrl();
-createDatabase();
 
 validateFields();
 
@@ -26,7 +25,7 @@ form.addEventListener("submit", (event) => {
     const phone = document.getElementById("phone").value;
     const address = document.getElementById("address").value;
 
-    const payload = {
+    const user = {
       name,
       surname,
       birthDate,
@@ -38,7 +37,11 @@ form.addEventListener("submit", (event) => {
       address,
     };
 
-    saveUser(payload);
+    if (!userId) {
+      createUser(user);
+    } else {
+      updateUser(user);
+    }
   }
 });
 
@@ -138,59 +141,24 @@ function compareDates(input) {
   }
 }
 
-function saveUser(user) {
-  if (!userId) {
-    createUser(user);
-  } else {
-    updateUser(user);
-  }
-}
-
 function getUsers() {
   users = JSON.parse(localStorage.getItem("USERS") || "[]");
 }
 
-function createDatabase() {
-  const request = indexedDB.open("database", 1);
-
-  request.onsuccess = function (event) {
-    const db = event.target.result;
-    console.log("Banco de dados aberto com sucesso!", db);
-  };
-
-  request.onerror = function (event) {
-    console.log("Erro ao abrir o banco de dados!", event.target.error);
-  };
-
-  request.onupgradeneeded = function (event) {
-    const db = event.target.result;
-
-    const objectStore = db.createObjectStore("users", {
-      keyPath: "id",
-      autoIncrement: true,
-    });
-  };
-}
-
 function getUserById(id) {
-  findById("database", "users", id)
+  findById(id)
     .then((user) => {
-      if (user) {
-        setFormData(user);
-      } else {
-        console.log("Usuário não encontrado");
-      }
-      console.log("Registro encontrado:", user);
+      setFormData(user);
     })
     .catch((error) => {
-      console.error("Erro:", error);
+      console.error("Erro ao buscar o usuário:", error);
     });
 }
 
 function getUserIdFromUrl() {
   const search = window.location.search;
-  const id = Number(search.split("=").at(-1));
-  if (!isNaN(id)) {
+  const id = search.split("=").at(-1);
+  if (id) {
     userId = id;
     getUserById(id);
   }
@@ -209,33 +177,13 @@ function setFormData(user) {
 }
 
 function createUser(user) {
-  // getUsers();
-  // users.push(user);
-  // localStorage.setItem("USERS", JSON.stringify(users));
-
-  const request = indexedDB.open("database", 1);
-
-  request.onsuccess = function (event) {
-    const db = event.target.result;
-
-    const transaction = db.transaction(["users"], "readwrite");
-    const objectStore = transaction.objectStore("users");
-
-    console.log(user);
-    const requestAdd = objectStore.add(user);
-
-    requestAdd.onsuccess = function () {
+  save(user)
+    .then(() => {
       window.location.href = "./usuarios.html";
-    };
-
-    requestAdd.onerror = function () {
-      console.log("Houve um erro!", event.target.error);
-    };
-  };
-
-  request.onerror = function (event) {
-    console.log("Houve um erro!", event.target.error);
-  };
+    })
+    .catch((error) => {
+      console.error("Erro ao adicionar usuário", error);
+    });
 }
 
 function updateUser(user) {
