@@ -114,17 +114,20 @@ function removeTask(index) {
 
 // Função para obter a data e hora atual e exibi-la
 function updateDateTime() {
-  const currentDateTimeElement = document.getElementById('currentDateTime');
-  const now = new Date();
-
-  const formattedDate = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(now);
-  const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
-
-  currentDateTimeElement.textContent = `${formattedDate}, ${formattedTime}`;
-
-  // Atualizar a cada segundo
-  setTimeout(updateDateTime, 1000);
-}
+    const currentDateTimeElement = document.getElementById('currentDateTime');
+    const now = new Date();
+  
+    const formattedDate = new Intl.DateTimeFormat('pt-BR', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }).format(now);
+    const formattedTime = now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+  
+    currentDateTimeElement.innerHTML = `${formattedTime} <br> ${formattedDate.charAt(0).toUpperCase()}${formattedDate.slice(1)}`;
+  
+    // Atualizar a cada segundo
+    setTimeout(updateDateTime, 1000);
+  }
+  
+  
+  
 
 // Inicialização - exibe as tarefas iniciais (se houver)
 findAll()
